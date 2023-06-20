@@ -1,0 +1,9 @@
+CREATE DATABASE ventas_db
+
+CREATE TABLE ventas (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  fecha DATE NOT NULL,
+  monto DECIMAL(10, 2) NOT NULL,
+  producto VARCHAR(50) NOT NULL,
+  cliente VARCHAR(100) NOT NULL
+);
