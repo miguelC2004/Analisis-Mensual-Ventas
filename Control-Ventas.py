@@ -6,7 +6,7 @@ cnx = mysql.connector.connect(
     host="localhost",
     user="root",
     password="",
-    database="nombre_de_la_base_de_datos"
+    database="ventas_db"
 )
 
 # Función para obtener los datos de ventas por mes
