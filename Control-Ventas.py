@@ -4,8 +4,8 @@ import matplotlib.pyplot as plt
 # Conexión a la base de datos
 cnx = mysql.connector.connect(
     host="localhost",
-    user="tu_usuario",
-    password="tu_contraseña",
+    user="root",
+    password="",
     database="nombre_de_la_base_de_datos"
 )
 
