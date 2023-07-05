@@ -22,7 +22,7 @@ El objetivo principal del proyecto es brindar una interfaz de usuario intuitiva 
 
 2. Asegúrate de tener una instancia de MySQL en ejecución.
 
-3. Crea una base de datos en MySQL y configura los parámetros de conexión en el archivo `ventas.py`:
+3. Crea una base de datos en MySQL y configura los parámetros de conexión en el archivo `control_ventas.py`:
 
    ```python
    cnx = mysql.connector.connect(
