@@ -27,21 +27,9 @@ El objetivo principal del proyecto es brindar una interfaz de usuario intuitiva 
    ```python
    cnx = mysql.connector.connect(
        host="localhost",
-       user="tu_usuario",
-       password="tu_contraseña",
-       database="nombre_de_la_base_de_datos"
+       user="root",
+       password="",
+       database="ventas_db"
    )```
    
-4. Ejecuta el script ventas.py para iniciar la aplicación de análisis de ventas.
-
-## USO
-
-1. Al iniciar la aplicación, se mostrará un menú de opciones:
-- Mostrar análisis de ventas por mes
-- Salir
-
-2. Selecciona la opción 1 para ver el análisis de ventas por mes.
-
-3. El programa consultará la base de datos y generará un gráfico de barras que muestra las ventas por mes.
-
-4. Para salir de la aplicación, selecciona la opción 2 en el menú.
+4. Ejecuta el script control_ventas.py para iniciar la aplicación de análisis de ventas.
