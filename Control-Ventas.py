@@ -4,7 +4,7 @@ from tkinter import *
 from tkinter import ttk
 from tkinter.messagebox import showinfo
 
-# Conexión a la base de datos
+# CRUD
 cnx = mysql.connector.connect(
     host="localhost",
     user="root",
@@ -12,7 +12,7 @@ cnx = mysql.connector.connect(
     database="ventas_db"
 )
 
-# Función para obtener los datos de ventas por mes
+# datos mensuales
 def obtener_ventas_por_mes():
     query = "SELECT MONTH(fecha), SUM(monto) FROM ventas GROUP BY MONTH(fecha)"
     cursor = cnx.cursor()
@@ -33,7 +33,7 @@ def generar_grafico_ventas():
     plt.title('Análisis de Ventas por Mes')
     plt.show()
 
-# Función para mostrar los datos de ventas por mes
+# mostrar datos
 def mostrar_datos_ventas():
     ventas = obtener_ventas_por_mes()
     mensaje = "Mes\tVentas\n"
@@ -41,7 +41,7 @@ def mostrar_datos_ventas():
         mensaje += f"{mes}\t{monto}\n"
     showinfo("Datos de ventas por mes", mensaje)
 
-# Función para agregar una venta a la base de datos
+# insertar el dato
 def agregar_venta():
     fecha = entry_fecha.get()
     monto = float(entry_monto.get())
@@ -62,7 +62,7 @@ def agregar_venta():
     entry_producto.delete(0, END)
     entry_cliente.delete(0, END)
 
-# Crear ventana principal
+# ventana principal
 ventana = Tk()
 ventana.title("Análisis de Ventas")
 ventana.geometry("400x300")
@@ -121,5 +121,5 @@ boton_datos.pack(side=LEFT, padx=5)
 # Iniciar bucle de eventos
 ventana.mainloop()
 
-# Cierre de la conexión a la base de datos
+
 cnx.close()
