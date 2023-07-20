@@ -1,4 +1,4 @@
-# Análisis de Ventas con Interfaz de Usuario y Base de Datos MySQL - Por Camilo Andrés Gonzales y Miguel Angel Cataño (@MiguelC2004)
+# Análisis de Ventas con Interfaz de Usuario y Base de Datos MySQL
 
 Este es un proyecto de análisis de ventas que utiliza Python como lenguaje de programación, una base de datos MySQL para almacenar la información de ventas y la biblioteca Matplotlib para generar gráficos interactivos.
 
